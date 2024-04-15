@@ -1,3 +1,4 @@
+//Dart 支持 if - else 语句，其中 else 是可选的，比如下面的例子。
 if (isRaining()) {
 you.bringRainCoat();
 } else if (isSnowing()) {
@@ -5,7 +6,7 @@ you.wearJacket();
 } else {
 car.putTopDown();
 }
-
+//Dart 的 if 语句中的条件必须是布尔值而不能为其它类型。
 
 
 
@@ -24,8 +25,12 @@ throw FormatException('Invalid coordinates.');
 
 
 
-
-
+//Switch 语句在 Dart 中使用 == 来比较整数、字符串或编译时常量，比较的两个对象必须是同一个类型且不能是子类并且没有重写 == 操作符。 枚举类型非常适合在 Switch 语句中使用。
+//
+//Dart 中的 Switch 语句仅适用于有限的情况，比如使用解释器和扫描器的场景。
+//每一个非空的 case 子句都必须有一个 break 语句，也可以通过 continue、throw 或者 return 来结束非空 case 语句。
+//
+// 不匹配任何 case 语句的情况下，会执行 default 子句中的代码：
 var command = 'OPEN';
 switch (command) {
 case 'CLOSED':
